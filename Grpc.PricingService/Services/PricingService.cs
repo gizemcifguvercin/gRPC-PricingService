@@ -14,5 +14,4 @@ namespace Grpc.PricingService
             });
         }
     }
-
 }
