@@ -26,8 +26,26 @@ dotnet add package Grpc.AspNetCore --version 2.32.0
 5- Add grpc service on UseEndpoints
 endpoints.MapGrpcService<PricingService>();
 
-#Grpc.Client
+# Grpc Client
+
 Add proto file
+
 dotnet add package Grpc.Net.Client --version 2.36.0
+
 dotnet add package Google.Protobuf --version 3.15.7
+
 dotnet add package Grpc.Tools --version 2.37.0-pre1
+
+# Project Structure
+
+<img src="https://i.ibb.co/48f02PX/Screen-Shot-2021-04-04-at-17-14-16.png"/>
+
+# BloomRPC For Calling Service
+
+<img src="https://i.ibb.co/bW48Ggz/Screen-Shot-2021-04-04-at-16-23-26.png"/>
+
+# Client App For Calling Service
+
+<img src="https://i.ibb.co/0nHJgC6/Screen-Shot-2021-04-04-at-17-08-37.png"/>
+
+
