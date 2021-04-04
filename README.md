@@ -1,4 +1,4 @@
-# Grpc Pricing Service
+# gRPC Pricing Service
 
 Enable proto extension for vscode
 vscode-proto3
@@ -14,19 +14,19 @@ dotnet add package Grpc.AspNetCore --version 2.32.0
 3-Build Project
   dotnet build
 
-3-Services
+4-Services
   Create Service and Impl from proto base
 
-4-appsettings enable http 2
+5-appsettings enable http 2
   "Kestrel": {
     "EndpointDefaults": {
       "Protocols": "Http2"
     }
 
-5- Add grpc service on UseEndpoints
+6- Add gRPC service on UseEndpoints
 endpoints.MapGrpcService<PricingService>();
 
-# Grpc Client
+# gRP Client
 
 Add proto file
 
@@ -47,5 +47,3 @@ dotnet add package Grpc.Tools --version 2.37.0-pre1
 # Client App For Calling Service
 
 <img src="https://i.ibb.co/0nHJgC6/Screen-Shot-2021-04-04-at-17-08-37.png"/>
-
-
