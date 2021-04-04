@@ -4,29 +4,40 @@ Enable proto extension for vscode
 vscode-proto3
 
 1-Add Grpc package
+</br>
+
 (grpc.AspNetCore/2.32.0)
 
 dotnet add package Grpc.AspNetCore --version 2.32.0
 
 2-Protos
+</br>
  Create proto (Request, Response, Rpc Service)
 
 3-Build Project
+</br>
+
   dotnet build
 
 4-Services
+</br>
+
   Create Service and Impl from proto base
 
 5-appsettings enable http 2
+</br>
+
   "Kestrel": {
     "EndpointDefaults": {
       "Protocols": "Http2"
     }
 
 6- Add gRPC service on UseEndpoints
+</br>
+
 endpoints.MapGrpcService<PricingService>();
 
-# gRP Client
+# gRPC Client
 
 Add proto file
 
