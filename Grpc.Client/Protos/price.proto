@@ -1,0 +1,17 @@
+syntax  = "proto3";
+
+option csharp_namespace = "Proto";
+
+service Pricing{
+    rpc CalculateTotalPriceOfBasket(CalculatePricingCommand) returns (CalculatePricingResponse);
+}
+
+message CalculatePricingCommand {
+    double unitPrice = 1;
+    int32 quantity = 2;
+    string productName = 3;
+}
+
+message CalculatePricingResponse {
+    double totalPrice = 1;
+}
